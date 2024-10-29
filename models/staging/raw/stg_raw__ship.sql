@@ -19,6 +19,8 @@ renamed as (
 
 )
 
-select * 
-CAST (ship_cost as FLOAT64)
+select orders_id,
+shipping_fee,
+logcost,
+CAST(ship_cost as FLOAT64) AS ship_cost
 from renamed
